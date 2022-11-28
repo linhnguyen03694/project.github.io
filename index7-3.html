@@ -1,0 +1,83 @@
+<head>
+  <title>OUTDOORS</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      background-image: url("background-image.jpeg");
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+      backdrop-filter: blur(0.8px);
+    }
+    div {
+      line-height: 20px;
+    }
+    .text-1 {
+      letter-spacing: 15px;
+      color: white;
+      font-size: 50px;
+      animation: text-1 2s;
+      animation-fill-mode: backwards;
+    }
+    .text-2 {
+      color: white;
+      font-size: 18px;
+      letter-spacing: 8px;
+      animation: text-2 2s;
+      animation-delay: 2s;
+      animation-fill-mode: backwards;
+    }
+    .text-3 {
+      margin-top: 50px;
+      padding: 10px 30px;
+      border-radius: 20px;
+      border: 0px solid white;
+      background-color: white;
+      color: rgb(217, 208, 208);
+      animation: text-3 2s;
+      animation-delay: 3.5s;
+      animation-fill-mode: backwards;
+    }
+    @keyframes text-1 {
+      from {
+        transform: translateX(-50%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes text-2 {
+      from {
+        transform: translateX(50%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes text-3 {
+      from {
+        transform: translateY(70%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p class="text-1">OUTDOORS</p>
+    <p class="text-2">IS WHERE LIFE HAPPENS</p>
+    <button class="text-3">DISCOVER OUR TOURS</button>
+  </div>
+</body>

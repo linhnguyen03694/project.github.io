@@ -1,0 +1,215 @@
+<head>
+  <title>Delicious Apples</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: rgb(95, 217, 95);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .menu {
+      display: flex;
+      background-color: white;
+      width: 600px;
+      height: 550px;
+      border-radius: 5px;
+      margin-top: 150px;
+    }
+    .img {
+      border-radius: 5px;
+      height: 468.5px;
+      margin: 0px;
+      position: relative;
+      top: 20px;
+      left: -20px;
+      box-shadow: 4px 5px 20px 1px rgb(128, 128, 128, 0.5);
+    }
+    .img-icon {
+      display: inline-block;
+      background-color: rgb(142, 255, 127);
+      border-radius: 5px 5px 0 5px;
+    }
+    .icon {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    i {
+      color: whitesmoke;
+      font-size: large;
+    }
+    .img-big {
+      margin-top: auto;
+      position: relative;
+      left: -50px;
+    }
+    .img-small {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: whitesmoke;
+      margin-bottom: 0px;
+      border-radius: 0 5px 5px 5px;
+    }
+    .img-small img {
+      border: 1px solid #000;
+      border-radius: 10%;
+    }
+    .product {
+      margin-left: 10px;
+    }
+    span {
+      color: rgb(208, 205, 205);
+    }
+    .text-1 span {
+      font-size: small;
+    }
+    h1 {
+      margin-bottom: 0.1em;
+    }
+    .price {
+      margin-top: 20px;
+    }
+    .price p {
+      color: red;
+      font-size: 30px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .price span {
+      color: red;
+      font-size: 70px;
+    }
+    .img-color {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .select-img span {
+      font-size: small;
+    }
+    .img-color img {
+      width: 30px;
+      margin: 5px 0px;
+    }
+    .img-color img:first-child {
+      border: 1px solid #000;
+      border-radius: 10%;
+    }
+    .img-color img:hover:not(first-child) {
+      border: 1px solid #000;
+      border-radius: 10%;
+    }
+    .information {
+      margin-top: 10px;
+    }
+    .text-information {
+      margin-top: 0px;
+      padding-left: 1em;
+    }
+    button {
+      background-color: red;
+      color: aliceblue;
+      font-weight: 600;
+      padding: 10px 30px;
+      border: 0px;
+      border-radius: 10px;
+      box-shadow: 4px 4px 10px 2px rgb(128, 128, 128, 0.5);
+    }
+    footer {
+      margin-top: 150px;
+      color: aliceblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu">
+    <div class="img">
+      <div class="img-icon">
+        <div class="icon">
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+            integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+          />
+          <a href="#"><i class="fa-sharp fa-solid fa-share-nodes"></i></a>
+          <a href="#"><i class="fa-solid fa-heart"></i></a>
+        </div>
+        <img
+          class="img-big"
+          src="https://res.cloudinary.com/john-mantas/image/upload/v1537291846/codepen/delicious-apples/green-apple-with-slice.png"
+          alt="big"
+        />
+      </div>
+      <div class="img-small">
+        <img
+          src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png"
+          alt="small 1"
+        />
+        <img
+          src="https://res.cloudinary.com/john-mantas/image/upload/v1537303532/codepen/delicious-apples/half-apple.png"
+          alt="small 2"
+        />
+        <img
+          src="https://res.cloudinary.com/john-mantas/image/upload/v1537303160/codepen/delicious-apples/green-apple-flipped.png"
+          alt="small 3"
+        />
+        <img
+          src="https://res.cloudinary.com/john-mantas/image/upload/v1537303708/codepen/delicious-apples/apple-top.png"
+          alt="small 4"
+        />
+      </div>
+    </div>
+    <div class="product">
+      <div class="text-1">
+        <h1>Delicious Apples</h1>
+        <span>COD: 4599</span>
+      </div>
+      <div class="price">
+        <p>R$</p>
+        <span>7.93</span>
+      </div>
+      <div class="select-img">
+        <span>SELECT A COLOR</span>
+        <div class="img-color">
+          <img
+            src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png"
+            alt="color 1"
+          />
+          <img
+            src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png"
+            alt="color 2"
+          />
+          <img
+            src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png"
+            alt="color 3"
+          />
+          <img
+            src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png"
+            alt="color 4"
+          />
+        </div>
+      </div>
+      <div class="information">
+        <span>BENEFITS</span>
+        <ul class="text-information">
+          <li>Apple are nultricious</li>
+          <li>Apples may be good for weight loss</li>
+          <li>Apples may be good for bone health</li>
+          <li>They're linked to a lowest risk of diabetes</li>
+        </ul>
+      </div>
+      <button>ADD TO CART</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Design from <a href="#">macbook</a> of <a href="#">Linh Kani</a></p>
+  </footer>
+</body>
