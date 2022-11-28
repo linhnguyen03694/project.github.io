@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+  </head>
+  <body>
+    <div class="container">
+      <a href="sanpham.html">Sản Phẩm</a>
+      <a href="#">Giỏ Hàng</a>
+      <a href="admin.html">Admin</a>
+    </div>
+    <main>
+      <form id="myForm" novalition>
+        <div class="form-product">
+          <div class="form-label">
+            <label for="name">Tên Sản Phẩm</label>
+          </div>
+          <div class="form-input">
+            <input type="text" name="name" id="name" />
+            <p class="error"></p>
+          </div>
+        </div>
+        <div class="form-product">
+          <div class="form-label">
+            <label for="image">Hình Ảnh</label>
+          </div>
+          <div class="form-input">
+            <input type="url" name="image" id="image" />
+            <p class="error"></p>
+          </div>
+        </div>
+        <div class="form-product">
+          <div class="form-label">
+            <label for="price">Giá</label>
+          </div>
+          <div class="form-input">
+            <input type="number" name="price" id="price" />
+            <p class="error"></p>
+          </div>
+        </div>
+        <div class="form-product">
+          <div class="form-label">
+            <label for="title">Mô Tả</label>
+          </div>
+          <div class="form-input">
+            <textarea type="text" name="title" id="title"></textarea>
+            <p class="error"></p>
+          </div>
+        </div>
+        <button type="submit">Gửi</button>
+      </form>
+    </main>
+    <script src="admin.js"></script>
+  </body>
+</html>

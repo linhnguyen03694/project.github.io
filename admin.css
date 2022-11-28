@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    text-align: center;
+  }
+  .container {
+    color: white;
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 30, 255);
+  }
+  .container a {
+    color: rgb(217, 210, 210);
+  }
+  .container a.active,
+  .container a:hover {
+    background-color: rgb(176, 163, 163);
+  }
+  form {
+    margin-top: 15%;
+  }
+  .form-product {
+    width: 900px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+  .form-product .form-label {
+    width: 200px;
+    text-align: left;
+    margin-right: 50px;
+    font-size: 20px;
+  }
+  .form-input input {
+    width: 400px;
+    height: 40px;
+  }
+  .form-input textarea {
+    width: 400px;
+    height: 100px;
+  }
+  .error {
+    color: red;
+    font-size: 13px;
+  }
